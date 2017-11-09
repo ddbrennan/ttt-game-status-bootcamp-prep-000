@@ -31,7 +31,7 @@ def full?(board)
   full = true
   board.each do |square|
     binding.pry
-    full = false if !position_taken?(board, square)
+    full = false if square == " "
   end
   full
 end
