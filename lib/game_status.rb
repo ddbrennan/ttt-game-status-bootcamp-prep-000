@@ -30,7 +30,6 @@ end
 def full?(board)
   full = true
   board.each do |square|
-    binding.pry
     full = false if square == " "
   end
   full
