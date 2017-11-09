@@ -21,7 +21,7 @@ def won?(board)
     pos_2 = board[combo[1]]
     pos_3 = board[combo[2]]
 
-    return combo if pos_1 == pos_2 && pos_3 == pos_1 && position_taken?(board, pos_1)
+    return combo if pos_1 == pos_2 && pos_3 == pos_1 && position_taken?(board, combo[0])
   end
   false
 end
