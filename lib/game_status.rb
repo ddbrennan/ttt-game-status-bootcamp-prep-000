@@ -27,7 +27,7 @@ def won?(board)
 end
 
 def full?(board)
-  full = board.find {|square| !position_taken?(board, square)}
-  return false if full
-  true
+  board.each do |square|
+    position_taken?(board, square)
+  end
 end
