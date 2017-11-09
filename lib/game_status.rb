@@ -31,6 +31,6 @@ def full?(board)
   !board.find { |square| square == " " }
 end
 
-def draw?
-
+def draw?(board)
+  (full?(board) && !won?(board))
 end
