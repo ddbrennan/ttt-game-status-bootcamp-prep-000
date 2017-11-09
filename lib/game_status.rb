@@ -28,9 +28,5 @@ def won?(board)
 end
 
 def full?(board)
-  full = true
-  board.each do |square|
-    full = false if square == " "
-  end
-  full
+  !board.find { |square| square == " " }
 end
