@@ -29,5 +29,5 @@ end
 def full?(board)
   full = board.find {|square| !position_taken?(board, square)}
   return false if full
-  false
+  true
 end
