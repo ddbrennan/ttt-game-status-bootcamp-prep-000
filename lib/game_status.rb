@@ -30,3 +30,7 @@ end
 def full?(board)
   !board.find { |square| square == " " }
 end
+
+def draw?
+
+end
