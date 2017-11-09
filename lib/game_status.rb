@@ -39,6 +39,6 @@ def over?(board)
   (draw?(board) || won?(board))
 end
 
-def winner?(board)
+def winner(board)
   board[won?(board)[0]]
 end
