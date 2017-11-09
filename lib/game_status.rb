@@ -27,7 +27,9 @@ def won?(board)
 end
 
 def full?(board)
+  full = true
   board.each do |square|
-    position_taken?(board, square)
+    full = false if !position_taken?(board, square)
   end
+  full
 end
